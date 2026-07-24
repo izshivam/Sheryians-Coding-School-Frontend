@@ -153,3 +153,28 @@ var box = document.querySelector('#box');
 
 
 /** Click, Mouseleave, Mousecenter, dblclick, mousemove, keyup, keydown, keypress, scroll, wheel **/
+
+
+box.addEventListener('mousemove', function(dets){
+   console.log('MouseMoving on box', dets)
+});
+
+document.addEventListener('keyup', function(dets){
+   console.log('Key Up', dets)
+});
+
+document.addEventListener('keydown', function(dets){
+   console.log('Key Down', dets)
+});
+
+document.addEventListener('keypress', function(dets){
+   console.log('Key Press', dets)
+});
+
+document.addEventListener('wheel', function(dets){
+   console.log('Wheel', dets)
+});
+
+document.addEventListener('scrool', function(dets){
+   console.log('Scrool', dets)
+});
